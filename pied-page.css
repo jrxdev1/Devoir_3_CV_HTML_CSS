@@ -1,0 +1,25 @@
+footer{
+    background-color: #17abb3;
+    box-sizing: border-box;
+    height: 80px;
+    padding: 18px 0 18px 0;
+    font-family: "ralewayitalic";
+}
+#lienpro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#lienpro img{
+    width: 25px;
+    margin: 0 10px 7px 10px;
+    filter: invert(100%);
+}
+#lienpro img:hover{
+    opacity: 70%;
+}
+#datemaj{
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8em;
+}

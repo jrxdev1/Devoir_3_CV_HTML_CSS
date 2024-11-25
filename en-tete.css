@@ -6,40 +6,67 @@ header{
     flex-direction: row;
     box-sizing: border-box;
 }
+/*photo de profil*/
 figure{
-    width: 130px;
-    height: 130px;
-    margin: 30px 300px 20px 100px;
+    width: 120px;
+    height: 120px;
+    margin: 35px 300px 0 100px;
 }
-#profil{
+figure img{
     width: 100%;
     height: 100%;object-fit: cover;
     border-radius: 50%;
     border: solid 4px #ffffff;
 }
+figure a{
+    cursor: zoom-in;
+}
+/*Infos*/
 #informations{
     width: 500px;
+    margin: 0 170px 0 0;
     color: #ffffff;
 }
 h1{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.6em;
     padding: 0 0 0 0;
     margin: 20px 0 10px 0;
+    font-family:'Lato';
 }
-p{
+a{
+    text-decoration: none;
+    color: #ffffffff;
+}
+/*Poste recherché*/
+#poste{
     text-align: center;
     font-size: 1.3em;
     padding: 0 0 0 0;
     margin: 0 0 20px 0;
+    font-family: "ralewaybold";
 }
+/*Infos de contact*/
 #contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
-    margin: 0 0 0 140px;
-    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 0 116px;
+    width: 280px;
+    height: 55px;
+}
+#image1{
+    flex-basis: 50%;
+}
+#image2{
+    flex-basis: 50%;
+}
+#image3{
+    flex-basis: 50%;
+}
+#image4{
+    flex-basis: 50%;
 }
 #contact img{
     width: 15px;
@@ -47,17 +74,3 @@ p{
     margin: 0 10px 0 10px;
     filter: invert(100%);
 }
-#image1{
-    grid-column: 1 / span 2;
-}
-#image2{
-    grid-column: 3 / span 4;
-}
-#image3{
-    grid-column: 1 / span 2;
-}
-#image4{
-    grid-column: 3 / span 4;
-}
-
-
