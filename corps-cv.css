@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    margin: auto;
+}
+aside{
+    width: 386px;
+}
+#corps{
+    width: 774px;
+}
+.experience{
+    text-align: left;
+}
+.dates{
+    text-align: right;
+}
