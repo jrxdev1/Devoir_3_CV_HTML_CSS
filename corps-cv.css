@@ -1,16 +1,78 @@
-main{
-    display: flex;
-    margin: auto;
-}
+
+/*Partie gauche*/
 aside{
-    width: 386px;
+    box-sizing: border-box;
+    background-color: #e3e3e3;
+    width: 350px;
+    max-width: 350px;
+    padding: 45px 45px 45px 45px;
 }
+/*Compétences et Langues*/
+#flexlangage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.langage{
+    flex-basis: 40%;
+    margin: 0 0 10px 0;
+}
+.niveau1{
+    flex-basis: 60%;
+    text-align: end;
+    color: #17abb3;
+}
+.niveau2{
+    flex-basis: 60%;
+    text-align: end;
+}
+
+/*Qualités et centres d'intérêt*/
+ul{
+    padding-left: 0px;
+    list-style-type: none;
+}
+ul li::before{
+    content:'◼';
+    color: #17abb3;
+    padding-right: 10px;
+}
+
+/*Partie droite*/
 #corps{
-    width: 774px;
+    box-sizing: border-box;
+    width: 810px;
+    max-width: 810px;
+    background-color: #ffffff;
+    padding: 45px 45px 45px 45px;
+}
+/*Profil*/
+.presentation{
+    text-align: justify;
+    text-indent: 20px;
+}
+/*Formations stages et expériences professionnelles*/
+
+.datesflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
 }
 .experience{
-    text-align: left;
+    flex-basis: 65%;
 }
 .dates{
-    text-align: right;
+    color: #17abb3;
+    flex-basis: 35%;
+    text-align: end;
+}
+.datesflex:hover{ 
+    background-color: #e3e3e3;
+    width: 710px;
+    padding: 5px 5px 5px 5px;
+    border: 8px solid #17abb3 ;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
 }
